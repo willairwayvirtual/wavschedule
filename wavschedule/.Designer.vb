@@ -28,9 +28,9 @@ Partial Class wavschedule
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.go = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.back = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -68,10 +68,10 @@ Partial Class wavschedule
         '
         Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"77300er", "737-800", "747-400", "787 -9"})
-        Me.ComboBox1.Location = New System.Drawing.Point(17, 43)
+        Me.ComboBox1.Items.AddRange(New Object() {"77300er", "737-800", "747-400", "787 -9", "alll"})
+        Me.ComboBox1.Location = New System.Drawing.Point(12, 43)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 26)
+        Me.ComboBox1.Size = New System.Drawing.Size(126, 26)
         Me.ComboBox1.TabIndex = 4
         Me.ComboBox1.Text = "aircraft Type"
         '
@@ -79,7 +79,7 @@ Partial Class wavschedule
         '
         Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"egll", "katl", "klax", "ypph", "eidw", "kfjjk", "uudd", "eham", "eddf"})
+        Me.ComboBox2.Items.AddRange(New Object() {"alll", "egll", "katl", "klax", "ypph", "eidw", "kfjjk", "uudd", "eham", "eddf"})
         Me.ComboBox2.Location = New System.Drawing.Point(192, 43)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(153, 26)
@@ -90,22 +90,22 @@ Partial Class wavschedule
         '
         Me.ComboBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"egll", "katl", "klax", "ypph", "eidw", "kfjjk", "uudd", "eham", "eddf"})
-        Me.ComboBox3.Location = New System.Drawing.Point(415, 43)
+        Me.ComboBox3.Items.AddRange(New Object() {"alll", "egll", "katl", "klax", "ypph", "eidw", "kfjjk", "uudd", "eham", "eddf"})
+        Me.ComboBox3.Location = New System.Drawing.Point(398, 43)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(162, 26)
+        Me.ComboBox3.Size = New System.Drawing.Size(179, 26)
         Me.ComboBox3.TabIndex = 6
         Me.ComboBox3.Text = "arrivals airpot"
         '
-        'Button1
+        'go
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(593, 4)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(135, 65)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "go"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.go.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.go.Location = New System.Drawing.Point(593, 4)
+        Me.go.Name = "go"
+        Me.go.Size = New System.Drawing.Size(135, 65)
+        Me.go.TabIndex = 7
+        Me.go.Text = "go"
+        Me.go.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
@@ -115,15 +115,15 @@ Partial Class wavschedule
         Me.DataGridView1.Size = New System.Drawing.Size(846, 374)
         Me.DataGridView1.TabIndex = 8
         '
-        'Button2
+        'back
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(734, 4)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(114, 65)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "back"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.back.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.back.Location = New System.Drawing.Point(734, 4)
+        Me.back.Name = "back"
+        Me.back.Size = New System.Drawing.Size(114, 65)
+        Me.back.TabIndex = 9
+        Me.back.Text = "back"
+        Me.back.UseVisualStyleBackColor = True
         '
         'wavschedule
         '
@@ -131,9 +131,9 @@ Partial Class wavschedule
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Silver
         Me.ClientSize = New System.Drawing.Size(850, 450)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.back)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.go)
         Me.Controls.Add(Me.ComboBox3)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.ComboBox1)
@@ -155,7 +155,7 @@ Partial Class wavschedule
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents go As Button
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Button2 As Button
+    Friend WithEvents back As Button
 End Class
